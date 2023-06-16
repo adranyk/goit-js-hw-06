@@ -24,15 +24,24 @@ button {
 }
 
 
-.gallery-item {
+.gallery {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   
 }
 
+.gallery-item {
+  width: calc(100%/3);
+  margin-right: 5px;
+}
+.gallery-item:last-child {
+  margin-right: 0;
+}
 .gallery-image {
-  width: 50%;
+ width: 100%;
 }
 
 
