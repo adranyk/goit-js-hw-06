@@ -7,13 +7,13 @@ const ingredients = [
   "Condiments",
 ];
 
-const ul = document.querySelector("#ingredients"); // Знаходимо список ul за його id
+const ul = document.querySelector("#ingredients"); 
 
 const liElements = ingredients.map((ingredient) => {
-  const li = document.createElement("li"); // Створюємо елемент <li>
-  li.textContent = ingredient; // Додаємо текстовий вміст (назву інгредієнта)
-  li.classList.add("item"); // Додаємо клас "item" до елементу <li>
+  const li = document.createElement("li"); 
+  li.textContent = ingredient; 
+  li.classList.add("item"); 
   return li;
 });
 
-ul.append(...liElements); // Додаємо створені елементи <li> до списку ul за допомогою оператора spread (...)
+ul.append(...liElements); 
